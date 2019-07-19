@@ -44,9 +44,9 @@
 			},
 			users() {
 				const users = this.sortedUsers.filter(user => {
-					if (user.name.first.toLowerCase().indexOf(this.searchString) != -1) {
+					if (user.name.first.toLowerCase().indexOf(this.searchString.toLowerCase()) != -1) {
 						return true;
-					} else if (user.name.last.toLowerCase().indexOf(this.searchString) != -1) {
+					} else if (user.name.last.toLowerCase().indexOf(this.searchString.toLowerCase()) != -1) {
 						return true;
 					};
 				});
